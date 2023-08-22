@@ -199,16 +199,20 @@ footer{
 footer .row{
     width: 80%;
 }
-footer .row .col ul{
+footer .row .col ul,
+footer .row .col2 ul{
     list-style: none;
 }
-footer .row .col ul li{
+footer .row .col ul li,
+footer .row .col2 ul li{
     padding: 2px 5px;
 }
-footer .row .col ul li:hover{
+footer .row .col ul li:hover,
+footer .row .col2 ul li:hover{
     text-decoration: underline;
 }
-footer .row .col ul a{
+footer .row .col ul a,
+footer .row .col2 ul a{
     color: #fff;
     text-decoration: none;
 }
