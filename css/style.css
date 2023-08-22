@@ -76,16 +76,16 @@ header .nav{
 }
 
 #home {
-    margin: 150px 0;
+    margin: 50px 0;
 }
 .container .section{
-    padding: 0 10%;
+    padding: 5% 10%;
     display: grid;
     gap: 4rem;
     grid-template-columns: repeat(4, 1fr);
 }
 .section .tiles{
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(2px);
     box-sizing: border-box;
     border-radius: 10px;
@@ -96,25 +96,51 @@ header .nav{
     0% {background: rgba(0, 0, 0, 0.4);backdrop-filter: blur(8px);margin-top: -30px;}
     100% {background: rgba(255, 255, 255, 0.2);backdrop-filter: blur(2px);margin: 0;}
 }
-.section .bio{
+.section #bio{
     grid-column: span 2;
 }
-.section .bio .avtar{
+.section #bio .avtar{
     width: 80%;
     border-radius: 50%;
 }
-.section .tag-line{
+.section #bio button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+#bio .wa{
+    background-color: green;
+    color: #fff;
+}
+#bio .fb{
+    background-color: blue;
+    color: #fff;
+}
+.section #tag-line{
     grid-column: span 2;
     grid-row: span 2;
 }
-.section .tag-line ul{
+.section #tag-line ul,
+.section #tag-line ol{
     margin-left: 20px;
 }
-.section .skills{
+.section #skills{
     grid-column: span 2;
 }
 
-.section .skills ul{
+.section #skills ul,
+.section #skills ol{
+    margin-left: 20px;
+}
+.section #education{
+    grid-column: span 2;
+}
+.section #hobbies{
+    grid-column: span 2;
+}
+.section #hobbies ul,
+.section #hobbies ol{
     margin-left: 20px;
 }
 
@@ -126,16 +152,16 @@ header .nav{
         flex-direction: column;
     }
     .container .section{
-        padding: 0 5%;
+        padding: 5% 5%;
         grid-template-columns: repeat(1, 1fr);
     }
     .section .tiles{
         backdrop-filter: blur(4px);
     }
-    .section .bio .avtar{
+    .section #bio .avtar{
         width: 30%;
     }
-    .section .bio .avtr-cntnr{
+    .section #bio .avtr-cntnr{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -145,11 +171,44 @@ header .nav{
 /* CONTEXT  */
 
 #context{
+    width: 100%;
     background: #fff;
     grid-template-columns: repeat(2, 1fr);
+}
+#context .address{
+    padding: 0 20%;
 }
 @media screen and (max-width: 820px) {
     #context{
         grid-template-columns: repeat(1, 1fr);
     }
+    #context .address{
+        padding: 0 5%;
+    }
+}
+
+footer{
+    padding: 1% 0;
+    background: rgb(102, 102, 102);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+footer .row{
+    width: 80%;
+}
+footer .row .col ul{
+    list-style: none;
+}
+footer .row .col ul li{
+    padding: 2px 5px;
+}
+footer .row .col ul li:hover{
+    text-decoration: underline;
+}
+footer .row .col ul a{
+    color: #fff;
+    text-decoration: none;
 }
